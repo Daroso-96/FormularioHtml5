@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/normalize.css"  rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div class="asesoria">
+            <form autocomplete="on">
+                <fieldset>
+                    <legend>Datos del estudiante</legend>
+                    <table>
+                        <tr>
+                            <td class="etiqueta">Identificacion </td>
+                            <td><input type="number" name="id" placeholder="Identificacion" title="Ingrese solo numeros en este campo" autofocus required autocomplete="off"></td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Nombre</td>
+                            <td><input type="text" name="nombres" placeholder="Nombre" required></td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Apellidos</td>
+                            <td><input type="text" name="apellidos" placeholder="Apellidos" required></td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">EMail</td>
+                            <td><input type="email" name="EMail" placeholder="EMail" autocomplete="off" required></td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Sexo</td>
+                            <td><input type="radio" name="genero" value="masculino" checked> Masculino</td>
+                        </tr>
+                        <tr>
+                            <td class="etiqueta"></td>
+                            <td><input type="radio" name="genero" value="femenino"> Femenino</td>
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta"></td>
+                            <td><input type="radio" name="genero" value="sinespecificar"> No deseo especificar.</td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Datos  asesoria</legend>
+                    <table>
+                        
+                        <tr>
+                            <td class="etiqueta">Tema</td>
+                            <td><input type="text" name="tema" placeholder="Temas" required></td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <td class="etiqueta">Asignatura </td>
+                            <td>
+                                <input list="asignaturas" name="asignatura" placeholder="Escoja la asignatura" required>
+                                <datalist id="asignaturas">
+                                    <option value="Electiva1">
+                                    <option value="Topicos2">
+                                    <option value="Formacion integral 2">
+                                    <option value="Ingenieria del software">
+                                    <option value="Practicas">
+                                </datalist>
+                            </td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Fecha</td>
+                            <td><input type="date" name="fecha" required></td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Hora</td>
+                            <td><input type="time" name="hora" required></td>    
+                        </tr>
+
+                        <tr>
+                            <td class="etiqueta">Observacion</td>
+                            <td><textarea name="message" rows="1" cols="22" placeholder="Observacion" required></textarea></td>    
+                        </tr>
+                        
+
+                    </table>
+                </fieldset>
+
+                <fieldset class="fieldset1">
+
+                    <table class="Botones">
+                        <tr>
+                            <td><input type="submit" value="Enviar"></td>
+                            <td><input id="btnReset" type="reset" value="Nuevo registro"></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </body>
+</html>
